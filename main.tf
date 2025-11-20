@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "github" {
-  token = "ghp_K0uPa0oAcs4Cy95qMaoEUXc0pZMSev0h92uv"
+  token = "ghp_K0uPa"
   owner = "nazariybu"
 }
 
@@ -120,7 +120,7 @@ resource "github_repository_webhook" "discord" {
   repository = github_repository.repo.name
 
   configuration {
-    url          = "https://discord.com/api/webhooks/1434528298469425152/ahq_77FaqV3yRJAgCgwsYRgYUpfUbY1lkennHXuH60o7EIRUaYB6bfefJK_A3WSP"
+    url          = "https://discord.com/api/webhooks/14345282"
     content_type = "application/json"
   }
 
@@ -139,5 +139,5 @@ resource "github_repository_deploy_key" "repositroy_deploy_key" {
 resource "github_actions_secret" "pat" {
   repository      = github_repository.repo.name
   secret_name     = "PAT"
-  plaintext_value = "ghp_px7GLoGAEoGbblKAJOeakShgPvQzN04aaaa"
+  plaintext_value = "ghp_px7GLo"
 }
